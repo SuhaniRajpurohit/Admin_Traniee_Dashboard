@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg: #dad7cd;
+    --secondary: #a3b18a;
+    --primary: #588157;
+    --dark: #3a5a40;
+    --accent: #344e41;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: #333;
+    overflow-x: hidden;
+}
+
+.btn-primary-custom {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--dark);
+    border-color: var(--dark);
+    color: #fff;
+}
+
+.btn-secondary-custom {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: #333;
+    transition: background-color 0.2s ease;
+}
+
+.btn-secondary-custom:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    background-color: #ffffff;
+    border: 2px solid var(--secondary);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+}
+
+.login-card h2 {
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background-color: var(--dark);
+    color: #fff;
+    transition: all 0.3s;
+    min-height: 100vh;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: var(--accent);
+    font-weight: 600;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul li a {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    display: block;
+    color: #e9edc9;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+#sidebar ul li a:hover {
+    color: #fff;
+    background: var(--primary);
+}
+
+#sidebar ul li.active > a {
+    color: #fff;
+    background: var(--accent);
+}
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+.navbar-custom {
+    background-color: #ffffff;
+    border-bottom: 2px solid var(--secondary);
+    padding: 15px 20px;
+}
+
+.card-stat {
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.bg-total-trainees {
+    background-color: var(--dark);
+}
+
+.bg-active-trainees {
+    background-color: var(--primary);
+}
+
+.bg-completed-trainees {
+    background-color: var(--accent);
+}
+
+.bg-total-tasks {
+    background-color: #5c677d;
+}
+
+.bg-pending-tasks {
+    background-color: #d90429;
+}
+
+.bg-completed-tasks {
+    background-color: #2b9348;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    
+    #sidebar {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: auto;
+    }
+}
