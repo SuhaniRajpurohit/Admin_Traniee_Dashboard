@@ -1,6 +1,3 @@
-CREATE DATABASE IF NOT EXISTS admin_trainee_db;
-USE admin_trainee_db;
-
 CREATE TABLE IF NOT EXISTS admin (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) NOT NULL UNIQUE,
